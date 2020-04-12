@@ -867,3 +867,46 @@ only screen and (min-device-pixel-ratio:2) {
     margin-top: -1px;
     line-height: 1.5;
 }
+
+.card.script5848 .cycle_2 {
+    background-image: url(./img/99.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.card.script5848 .rectangle_1 {
+    background-image: url(./img/73.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.card.script5848 .triangle_24 {
+    background-image: url(./img/213.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.card.script5848 .hexagon_1 {
+    background-image: url(./img/111.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+
+}
+
+.card.script5848 .hexagon_1 {
+    background-image: url(./img/197.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.card.script5848 .triangle_16 {
+    background-image: url(./img/197.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
