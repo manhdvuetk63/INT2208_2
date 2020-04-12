@@ -64,8 +64,6 @@ body .beads-wrapper {
     background-image: url(img/ball.png);
     position: absolute;
     top: 3px;
-    transition: left 200ms linear;
-    -webkit-transition: left 200ms linear;
 }
 
 .game-box {
@@ -95,27 +93,6 @@ body .beads-wrapper {
 
 .table_place.right {
     left: 587px;
-}
-
-.table_place {
-    position: absolute;
-    text-align: center;
-    top: -5px;
-    width: 280px;
-    height: 120px;
-}
-
-.table_monster {
-    position: relative;
-    height: 120px;
-    min-width: 160px;
-    max-width: 260px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: inline-block;
-    background-size: 100% 100%;
-    border: 1px solid #717573;
-    background-image: url(./img/297.png);
 }
 
 .table_monster .picture_table {
@@ -217,7 +194,6 @@ body .beads-wrapper {
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    -ms-filter: "FlipH";
 }
 
 .card.script5848 .monster.orange.active {
@@ -258,13 +234,12 @@ body .beads-wrapper {
     font-size: 25px;
     line-height: 25px;
     white-space: nowrap;
-    margin-top: 5px;
 }
 
 .card.script5848 .title {
     position: absolute;
     left: 0;
-    top: -55;
+    top: 0;
     font-size: 45px;
     line-height: 45px;
     height: 45px;
@@ -284,7 +259,7 @@ body .beads-wrapper {
     width: 170px;
     height: 50px;
     left: 780px;
-    top: -55px;
+    top: 0px;
 }
 
 .card.script5848 .life {
@@ -314,15 +289,9 @@ body .beads-wrapper {
     text-align: center
 }
 
-.card.script5848 .title {
-    height: 55px;
-    top: -55px;
-    font-size: 38px
-}
-
 .card.script5848 .title .text {
     position: relative;
-    display: inline
+    display: inline;
 }
 
 .card.script5848 .monster_place {
@@ -331,6 +300,7 @@ body .beads-wrapper {
     width: 960px;
     height: 515px
 }
+
 .card.script5848 .scene {
     position: relative;
     display: block;
@@ -348,69 +318,6 @@ body .beads-wrapper {
     animation: rush .5s ease-out;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both
-}
-
-@-webkit-keyframes rush {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(.7, .7);
-        -moz-transform: scale(.7, .7);
-        transform: scale(.7, .7)
-    }
-    50% {
-        opacity: 1;
-        -webkit-transform: scale(1.2, 1.2);
-        -moz-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1.2)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1, 1);
-        -moz-transform: scale(1, 1);
-        transform: scale(1, 1)
-    }
-}
-
-@-moz-keyframes rush {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(.7, .7);
-        -moz-transform: scale(.7, .7);
-        transform: scale(.7, .7)
-    }
-    50% {
-        opacity: 1;
-        -webkit-transform: scale(1.2, 1.2);
-        -moz-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1.2)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1, 1);
-        -moz-transform: scale(1, 1);
-        transform: scale(1, 1)
-    }
-}
-
-@-o-keyframes rush {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(.7, .7);
-        -moz-transform: scale(.7, .7);
-        transform: scale(.7, .7)
-    }
-    50% {
-        opacity: 1;
-        -webkit-transform: scale(1.2, 1.2);
-        -moz-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1.2)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1, 1);
-        -moz-transform: scale(1, 1);
-        transform: scale(1, 1)
-    }
 }
 
 @keyframes rush {
@@ -628,55 +535,12 @@ only screen and (min-device-pixel-ratio:2) {
     transition: opacity 1s;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .table_monster.wrong {
-        background-image: url(img/300.png);
-        -webkit-background-size: 280px 120px;
-        background-size: 280px 120px
-    }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.blue.active .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.blue.active {
-        background-image: url(img/303.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.blue.sleep {
     background-image: url(img/306.png)
 }
 
 .card.script5848 .monster.blue.sleep .mouth {
     background-image: url(img/301.png)
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.blue.sleep .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.blue.sleep {
-        background-image: url(img/307.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .monster.blue.red {
@@ -687,55 +551,12 @@ only screen and (min-device-pixel-ratio:2) {
     background-image: url(img/301.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.blue.red .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.blue.red {
-        background-image: url(img/309.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.nose.blue {
     background-image: url(img/304.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.nose.blue {
-        background-image: url(img/305.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.blue.eat .mouth {
-        background-image: url(./img/320.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.blue.eat .mouth {
     background-image: url(/img/310.png)
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.blue.eat .mouth {
-        background-image: url(./img/311.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .monster.green.active {
@@ -746,44 +567,12 @@ only screen and (min-device-pixel-ratio:2) {
     background-image: url(img/301.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.green.active .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.green.active {
-        background-image: url(img/313.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.green.sleep {
     background-image: url(img/316.png);
 }
 
 .card.script5848 .monster.green.sleep .mouth {
     background-image: url(img/301.png)
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.green.sleep .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.green.sleep {
-        background-image: url(img/317.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .monster.green.red {
@@ -794,40 +583,8 @@ only screen and (min-device-pixel-ratio:2) {
     background-image: url(img/301.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.green.red .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.green.red {
-        background-image: url(img/319.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.nose.green {
     background-image: url(img/314.png);
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.nose.green {
-        background-image: url(img/315.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.green.eat .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .monster.green.eat .mouth {
@@ -839,39 +596,12 @@ only screen and (min-device-pixel-ratio:2) {
     height: 480px
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.green.eat .mouth {
-        background-image: url(img/321.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.orange.active {
     background-image: url(img/322.png)
 }
 
 .card.script5848 .monster.orange.active .mouth {
     background-image: url(img/301.png)
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.orange.active .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.orange.active {
-        background-image: url(img/323.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .monster.orange.sleep {
@@ -882,22 +612,6 @@ only screen and (min-device-pixel-ratio:2) {
     background-image: url(img/301.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.orange.sleep .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.orange.sleep {
-        background-image: url(img/327.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.orange.red {
     background-image: url(img/328.png)
 }
@@ -906,55 +620,12 @@ only screen and (min-device-pixel-ratio:2) {
     background-image: url(img/301.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.orange.red .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.orange.red {
-        background-image: url(img/329.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.nose.orange {
     background-image: url(img/324.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.nose.orange {
-        background-image: url(img/325.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.orange.eat .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.orange.eat .mouth {
     background-image: url(img/330.png)
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.orange.eat .mouth {
-        background-image: url(img/331.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .monster.violet.active {
@@ -965,44 +636,12 @@ only screen and (min-device-pixel-ratio:2) {
     background-image: url(img/301.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.violet.active .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.violet.active {
-        background-image: url(img/333.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.violet.sleep {
     background-image: url(img/336.png)
 }
 
 .card.script5848 .monster.violet.sleep .mouth {
     background-image: url(img/301.png)
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.violet.sleep .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.violet.sleep {
-        background-image: url(img/337.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .monster.violet.red {
@@ -1013,55 +652,12 @@ only screen and (min-device-pixel-ratio:2) {
     background-image: url(img/301.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.violet.red .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.violet.red {
-        background-image: url(img/339.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.nose.violet {
     background-image: url(img/334.png)
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.nose.violet {
-        background-image: url(img/335.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-    .card.script5848 .monster.violet.eat .mouth {
-        background-image: url();
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
-}
-
 .card.script5848 .monster.violet.eat .mouth {
     background-image: url(img/340.png)
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2 / 1),
-only screen and (min-device-pixel-ratio:2) {
-    .card.script5848 .monster.violet.eat .mouth {
-        background-image: url(img/341.png);
-        -webkit-background-size: 320px 480px;
-        background-size: 320px 480px
-    }
 }
 
 .card.script5848 .grid_monster {
@@ -1208,4 +804,66 @@ only screen and (min-device-pixel-ratio:2) {
     width: 80px;
     height: 80px;
     position: absolute;
+}
+
+.card.script5848 .square_5_big {
+    background-image: url(img/247.png);
+}
+
+.card.script5848 .cycle_1_big,
+.card.script5848 .cycle_2_big,
+.card.script5848 .cycle_3_big,
+.card.script5848 .cycle_4_big,
+.card.script5848 .cycle_5_big,
+.card.script5848 .cycle_6_big,
+.card.script5848 .square_1_big,
+.card.script5848 .square_2_big,
+.card.script5848 .square_3_big,
+.card.script5848 .square_4_big,
+.card.script5848 .square_5_big,
+.card.script5848 .square_6_big {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+}
+
+.monster.violet.active {
+    background-image: url(./img/332.png);
+}
+
+.monster.violet.red {
+    background-image: url(img/338.png);
+}
+
+.card.script5848 .monster.violet.sleep {
+    background-image: url(img/336.png);
+}
+
+.card.script5848 .monster.nose.violet {
+    background-image: url(img/334.png);
+}
+
+.card.script5848 .monster.blue.active {
+    background-image: url(img/302.png);
+}
+
+.card.script5848 .monster.blue.red {
+    background-image: url(img/308.png);
+}
+
+.card.script5848 .monster.blue.sleep {
+    background-image: url(img/306.png);
+}
+
+.card.script5848 .monster.nose.blue {
+    background-image: url(img/304.png);
+}
+
+.uchiru-place {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1px;
+    margin-top: -1px;
+    line-height: 1.5;
 }
