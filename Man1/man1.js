@@ -94,10 +94,10 @@ $(document).ready(function() {
             setTimeout(function() {
                 if (countA == 4) {
                     console.log(countA);
-                    $('.monster_holder.left .active,.monster_holder.left .red,.monster_holder.left .mouth,.monster_holder.left .nose').css("opacity", "0");
-                    $('.monster_holder.left .sleep').css('opacity', '1');
-                    $('.square').css('opacity', '0');
-                    $('.table_place.left,.label_table.left').css('opacity', '0');
+                    $('.sence-1 .monster_holder.left .active,.sence-1 .monster_holder.left .red,.sence-1 .monster_holder.left .mouth,.sence-1 .monster_holder.left .nose').css("opacity", "0");
+                    $('.sence-1 .monster_holder.left .sleep').css('opacity', '1');
+                    $('.sence-1 .square').css('opacity', '0');
+                    $('.sence-1 .table_place.left,.sence-1 .label_table.left').css('opacity', '0');
                 }
             }, 8000);
         }
@@ -147,10 +147,10 @@ $(document).ready(function() {
             }
             setTimeout(function() {
                 if (countB == 4) {
-                    $('.monster_holder.right .active,.monster_holder.right .red,.monster_holder.right .mouth,.monster_holder.right .nose').css("opacity", "0");
-                    $('.monster_holder.right .sleep').css('opacity', '1');
+                    $('.sence-1 .monster_holder.right .active,.sence-1 .monster_holder.right .red,.sence-1 .monster_holder.right .mouth,.sence-1 .monster_holder.right .nose').css("opacity", "0");
+                    $('.sence-1 .monster_holder.right .sleep').css('opacity', '1');
                     $('.circle').css('opacity', '0');
-                    $('.table_place.right,.label_table.right').css('opacity', '0');
+                    $('.sence-1 .table_place.right,.sence-1 .label_table.right').css('opacity', '0');
                 }
             }, 7500);
         }
@@ -174,7 +174,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.sence-1').css('display', 'none');
                 $('.sence-2').css('display', 'block');
-                $('#bead2').animate({ left: '440px' }, 2000);
+                $('#bead2').animate({ left: '440px' }, 1000);
             }, 5000);
         }
     })
