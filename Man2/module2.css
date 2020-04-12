@@ -1,0 +1,1327 @@
+div.bg {
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    background: rgb(251, 222, 22);
+    background: linear-gradient(0deg, rgba(251, 222, 22, 1) 0%, rgba(232, 243, 245, 1) 32%, rgba(167, 214, 220, 1) 100%);
+}
+
+
+/* body .uchiru_box {
+    z-index: 0;
+    position: relative;
+    margin: 15px auto 20px;
+    width: 960px;
+    min-height: 600px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    -moz-box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+body .uchiru_head.with_progress {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.29);
+}
+
+body .uchiru_head {
+    line-height: 49px;
+    position: relative;
+    padding: 0 20px;
+}
+
+body .uchiru_head .back-link {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+body a {
+    color: #246EA1;
+}
+
+a {
+    background: transparent;
+}
+
+body .uchiru_head .back-link .arrow-left {
+    top: -2px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #246EA1;
+    position: relative;
+    border-radius: 50%;
+}
+
+body .uchiru_head .back-link * {
+    font-family: "Noto Sans" !important;
+}
+
+body .beads-wrapper {
+    font-size: 14px;
+    text-align: center;
+    margin-top: -54px;
+    padding: 0 80px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.inner_progress {
+    margin: 0 auto;
+    width: 465px;
+    height: 26px;
+    border-radius: 16px;
+    background: #EDEDED;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.22), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.18);
+    position: relative;
+}
+
+.inner_progress i {
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 10px;
+    background-image: url(img//img/ball.png);
+    position: absolute;
+    top: 3px;
+    transition: left 200ms linear;
+    -webkit-transition: left 200ms linear;
+}
+
+body .card_content {
+    padding: 4px 0;
+}
+
+.uchiru-place.fixed {
+    width: 960px;
+    min-height: 483px;
+}
+
+.uchiru-place {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1px;
+    margin-top: -1px;
+    line-height: 1.5;
+}
+
+.card.script5354 .scene {
+    position: relative;
+    min-height: 540px;
+    padding: 10px;
+}
+.card.script5354 * {
+    padding: 0;
+    margin: 0;
+}
+
+.card.player-1 * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card.script5354 .condition {
+    position: absolute;
+    font-size: 40px;
+}
+
+ 
+
+  
+
+.card.script5354 .square_1 {
+    background-image: url(img/img/87.png);
+}
+
+.card.script5354 .figure {
+    position: absolute;
+    width: 300px;
+    left: 90px;
+    top: 70px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ 
+
+  
+
+.card.script5354 .stick_1 {
+    top: 90px;
+    left: 570px;
+}
+
+.card.script5354 .stick {
+    background-image: url(img//img/37.png);
+}
+
+.card.script5354 .stick,
+.card.script5354 .stick_fly {
+    width: 360px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+ 
+
+  
+
+.card.script5354 .stick_fly_1 {
+    top: 90px;
+    left: 570px;
+}
+
+.card.script5354 .stick_fly {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.card.script5354 .stick,
+.card.script5354 .stick_fly {
+    width: 360px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+
+
+  
+
+.card.script5354 .condition_litle {
+    position: absolute;
+    font-size: 40px;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc {
+    height: 41px;
+    padding: 2px 14px;
+    border-radius: 5px;
+}
+
+.card.script5354 .userButton_1,
+.card.script5354 .userButton_2 {
+    position: absolute;
+    top: 110px;
+}
+
+.card.script5354 .button-ok_color_blue {
+    background: #6ec3e2;
+}
+
+.card.script5354 .button-ok {
+    position: relative;
+    display: inline-block;
+}
+
+ 
+
+  
+
+.pointerhand {
+    cursor: pointer;
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px 0 5px;
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder {
+    position: relative;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__right,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__wrong {
+    background: #ff5768;
+    opacity: 0;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__right,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__right {
+    background: #8fbf82;
+    opacity: 0;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px 0 5px;
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    position: absolute;
+    left: 14px;
+    top: 2px;
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__text {
+    color: #fff;
+}
+
+ 
+
+  
+
+.card.script5354 .stick_2 {
+    top: 330px;
+    left: 570px;
+}
+
+.card.script5354 .stick {
+    background-image: url(img//img/37.png);
+}
+
+.card.script5354 .stick,
+.card.script5354 .stick_fly {
+    width: 360px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+ 
+
+  
+
+.card.script5354 .stick_fly_2 {
+    top: 330px;
+    left: 570px;
+}
+
+.card.script5354 .stick_fly {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.card.script5354 .stick,
+.card.script5354 .stick_fly {
+    width: 360px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+ 
+
+  
+
+.card.script5354 .condition_litle {
+    position: absolute;
+    font-size: 40px;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc {
+    height: 41px;
+    padding: 2px 14px;
+    border-radius: 5px;
+}
+
+.card.script5354 .userButton_1,
+.card.script5354 .userButton_2 {
+    position: absolute;
+    top: 110px;
+}
+
+.card.script5354 .button-ok_color_blue {
+    background: #6ec3e2;
+}
+
+.card.script5354 .button-ok {
+    position: relative;
+    display: inline-block;
+}
+
+ 
+
+  
+
+.pointerhand {
+    cursor: pointer;
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px 0 5px;
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder {
+    position: relative;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__right,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__wrong {
+    background: #ff5768;
+    opacity: 0;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__right,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__right {
+    background: #8fbf82;
+    opacity: 0;
+}
+
+ 
+
+  
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px 0 5px;
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    position: absolute;
+    left: 14px;
+    top: 2px;
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__text {
+    color: #fff;
+} */
+
+* body .uchiru_box {
+    z-index: 0;
+    position: relative;
+    margin: 15px auto 20px;
+    width: 960px;
+    min-height: 600px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    -moz-box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.5), 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+body .uchiru_head.with_progress {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.29);
+}
+
+body .uchiru_head {
+    line-height: 49px;
+    position: relative;
+    padding: 0 20px;
+}
+
+body .uchiru_head .back-link {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+body a {
+    color: #246EA1;
+}
+
+a {
+    background: transparent;
+}
+
+body .uchiru_head .back-link .arrow-left {
+    top: -2px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #246EA1;
+    position: relative;
+    border-radius: 50%;
+}
+
+body .uchiru_head .back-link * {
+    font-family: "Noto Sans" !important;
+}
+
+body .beads-wrapper {
+    font-size: 14px;
+    text-align: center;
+    margin-top: -54px;
+    padding: 0 80px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.inner_progress {
+    margin: 0 auto;
+    width: 465px;
+    height: 26px;
+    border-radius: 16px;
+    background: #EDEDED;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.22), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.18);
+    position: relative;
+}
+
+.inner_progress i {
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 10px;
+    background-image: url(img/ball.png);
+    position: absolute;
+    top: 3px;
+    transition: left 200ms linear;
+    -webkit-transition: left 200ms linear;
+}
+
+body .card_content {
+    padding: 4px 0;
+}
+
+.uchiru-place.fixed {
+    width: 960px;
+    min-height: 483px;
+}
+
+.uchiru-place {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1px;
+    margin-top: -1px;
+    line-height: 1.5;
+}
+
+.card.script5354 .scene {
+    position: relative;
+    min-height: 540px;
+    padding: 10px;
+}
+
+.card.script5354 * {
+    padding: 0;
+    margin: 0;
+}
+
+.card.player-1 * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card.script5354.dev .grid {
+    display: block
+}
+
+.card.script5354.dev .scene div:not(.grid):not(.grid_part):not(.grid_column):not(.grid_row):not(.button_choice) {
+    background-color: rgba(255, 95, 0, .2)
+}
+
+.card.script5354 .grid {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: -1;
+    display: none;
+    font-size: 10px
+}
+
+.card.script5354 .grid_part {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: transparent
+}
+
+.card.script5354 .vertical_grid .grid_column {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top
+}
+
+.card.script5354 .vertical_grid .grid_column:nth-child(odd) {
+    background-color: rgba(0, 160, 255, .2)
+}
+
+.card.script5354 .vertical_grid .grid_column:nth-child(4n+2) {
+    background-color: rgba(0, 160, 255, .1)
+}
+
+.card.script5354 .horizontal_grid .grid_row {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left
+}
+
+.card.script5354 .horizontal_grid .grid_row span {
+    vertical-align: middle
+}
+
+.card.script5354 .horizontal_grid .grid_row:nth-child(odd) {
+    background-color: rgba(0, 160, 255, .2)
+}
+
+.card.script5354 .horizontal_grid .grid_row:nth-child(4n+2) {
+    background-color: rgba(0, 160, 255, .1)
+}
+
+.card.script5354 .under_start,
+.card.script5354.under_start {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px)
+}
+
+.card.script5354 .under_start.started,
+.card.script5354.under_start.started {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: linear .8s;
+    transition: linear .8s
+}
+
+.card.script5354 .under_start.finished,
+.card.script5354.under_start.finished {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+    -webkit-transition: none;
+    transition: none
+}
+
+.card.script5354 .btn_play_wall {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.card.script5354 .btn_play {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    width: 246px;
+    height: 246px;
+    margin: -166px 0 0 -166px;
+    border-radius: 200px;
+    background-color: rgba(184, 0, 161, .1);
+    border: 43px solid rgba(255, 255, 255, .75);
+    -webkit-transition: linear .3s;
+    transition: linear .2s;
+    cursor: pointer
+}
+
+.card.script5354 .btn_play.started {
+    -webkit-transition: linear .2s;
+    transition: linear .2s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0
+}
+
+.card.script5354 .btn_play:hover {
+    width: 260px;
+    height: 260px;
+    margin: -173px 0 0 -173px
+}
+
+.card.script5354 .btn_play:hover .triangle {
+    background-position: 0 -113px
+}
+
+.card.script5354 .btn_play .triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 112px;
+    height: 113px;
+    background: url(img/27.png) no-repeat;
+    margin: -57px 0 0 -35px
+}
+
+.card.script5354 .btn_play .triangle span {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -10px;
+    left: 18px;
+    color: #fff
+}
+
+.card.script5354 .button-ok {
+    position: relative;
+    display: inline-block
+}
+
+.card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) {
+    height: 41px;
+    padding: 2px 14px;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder {
+    position: relative
+}
+
+.card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__right,
+.card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text {
+    position: absolute;
+    left: 14px;
+    top: 2px
+}
+
+.card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder,
+.card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 7px 0 6px
+}
+
+.firefox .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder,
+.firefox .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text,
+.ipad .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder,
+.ipad .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text,
+.opera .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder,
+.opera .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text,
+.safari .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder,
+.safari .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text {
+    padding: 7px 0 6px
+}
+
+.ie .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder,
+.ie .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text {
+    padding: 4px 0 9px
+}
+
+.android .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__placeholder,
+.android .card.script5354 .button-ok_font_cr:not(.button-ok_case_uc) .button-ok__text {
+    padding: 8px 0 5px
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc {
+    height: 41px;
+    padding: 2px 14px;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder {
+    position: relative
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__right,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    position: absolute;
+    left: 14px;
+    top: 2px
+}
+
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px 0 5px
+}
+
+.firefox .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.firefox .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text,
+.ipad .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.ipad .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text,
+.opera .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.opera .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text,
+.safari .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.safari .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    padding: 8px 0 5px
+}
+
+.ie .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.ie .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    padding: 6px 0 7px
+}
+
+.android .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__placeholder,
+.android .card.script5354 .button-ok_font_cr.button-ok_case_uc .button-ok__text {
+    padding: 9px 0 4px
+}
+
+.card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) {
+    height: 41px;
+    padding: 2px 14px;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder {
+    position: relative
+}
+
+.card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__right,
+.card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text {
+    position: absolute;
+    left: 14px;
+    top: 2px
+}
+
+.card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder,
+.card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 7px 0 6px
+}
+
+.safari .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder,
+.safari .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text {
+    padding: 7px 0 6px
+}
+
+.firefox .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder,
+.firefox .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text,
+.opera .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder,
+.opera .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text {
+    padding: 6px 0 7px
+}
+
+.ipad .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder,
+.ipad .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text {
+    padding: 4px 0 9px
+}
+
+.ie .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder,
+.ie .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text {
+    padding: 5px 0 8px
+}
+
+.android .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__placeholder,
+.android .card.script5354 .button-ok_font_pts:not(.button-ok_case_uc) .button-ok__text {
+    padding: 6px 0 7px
+}
+
+.card.script5354 .button-ok_font_pts.button-ok_case_uc {
+    height: 41px;
+    padding: 2px 14px;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder {
+    position: relative
+}
+
+.card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__right,
+.card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__wrong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px
+}
+
+.card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text {
+    position: absolute;
+    left: 14px;
+    top: 2px
+}
+
+.card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder,
+.card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text {
+    display: block;
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px 0 5px
+}
+
+.safari .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder,
+.safari .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text {
+    padding: 8px 0 5px
+}
+
+.firefox .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder,
+.firefox .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text,
+.opera .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder,
+.opera .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text {
+    padding: 7px 0 6px
+}
+
+.ipad .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder,
+.ipad .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text {
+    padding: 5px 0 8px
+}
+
+.ie .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder,
+.ie .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text {
+    padding: 6px 0 7px
+}
+
+.android .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__placeholder,
+.android .card.script5354 .button-ok_font_pts.button-ok_case_uc .button-ok__text {
+    padding: 7px 0 6px
+}
+
+.card.script5354 .button-ok_color_blue {
+    background: #6ec3e2
+}
+
+.no-touch .card.script5354 .button-ok_color_blue:not(.disabled):not(.inactive):not(.button-ok_right):not(.button-ok_wrong):hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: #59bbde
+}
+
+.no-touch .card.script5354 .button-ok_color_blue:not(.disabled):not(.inactive):not(.button-ok_right):not(.button-ok_wrong):active,
+.touch .card.script5354 .button-ok_color_blue:not(.disabled):not(.inactive):not(.button-ok_right):not(.button-ok_wrong):active {
+    background: #3fb0d9
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__right {
+    background: #8fbf82;
+    opacity: 0
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__wrong {
+    background: #ff5768;
+    opacity: 0
+}
+
+.card.script5354 .button-ok_color_blue .button-ok__text {
+    color: #fff
+}
+
+.card.script5354 .button-ok_color_blue.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: .5
+}
+
+.card.script5354 .button-ok_color_blue.inactive {
+    pointer-events: none;
+    cursor: default
+}
+
+.card.script5354 .button-ok_color_blue.button-ok_right .button-ok__right,
+.card.script5354 .button-ok_color_blue.button-ok_wrong .button-ok__wrong {
+    opacity: 1
+}
+
+.card.script5354 .button-ok_color_blue:not(.no-transition).button-ok_right-end .button-ok__right,
+.card.script5354 .button-ok_color_blue:not(.no-transition).button-ok_wrong-end .button-ok__wrong {
+    -moz-transition: opacity .2s 0s;
+    -o-transition: opacity .2s 0s;
+    -webkit-transition: opacity .2s 0s;
+    transition: opacity .2s 0s
+}
+
+.card.script5354 .button-ok_color_white {
+    background: rgba(255, 255, 255, .9)
+}
+
+.no-touch .card.script5354 .button-ok_color_white:not(.disabled):not(.inactive):not(.button-ok_right):not(.button-ok_wrong):hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: #fff
+}
+
+.no-touch .card.script5354 .button-ok_color_white:not(.disabled):not(.inactive):not(.button-ok_right):not(.button-ok_wrong):active,
+.touch .card.script5354 .button-ok_color_white:not(.disabled):not(.inactive):not(.button-ok_right):not(.button-ok_wrong):active {
+    background: rgba(255, 255, 255, .85)
+}
+
+.card.script5354 .button-ok_color_white .button-ok__right {
+    background: #8fbf82;
+    opacity: 0
+}
+
+.card.script5354 .button-ok_color_white .button-ok__wrong {
+    background: #ff5768;
+    opacity: 0
+}
+
+.card.script5354 .button-ok_color_white .button-ok__text {
+    color: #000
+}
+
+.card.script5354 .button-ok_color_white.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: .5
+}
+
+.card.script5354 .button-ok_color_white.inactive {
+    pointer-events: none;
+    cursor: default
+}
+
+.card.script5354 .button-ok_color_white.button-ok_right .button-ok__right,
+.card.script5354 .button-ok_color_white.button-ok_wrong .button-ok__wrong {
+    opacity: 1
+}
+
+.card.script5354 .button-ok_color_white:not(.no-transition).button-ok_right-end .button-ok__right,
+.card.script5354 .button-ok_color_white:not(.no-transition).button-ok_wrong-end .button-ok__wrong {
+    -moz-transition: opacity .2s 0s;
+    -o-transition: opacity .2s 0s;
+    -webkit-transition: opacity .2s 0s;
+    transition: opacity .2s 0s
+}
+
+.card.script5354 * {
+    padding: 0;
+    margin: 0
+}
+
+.card.script5354 .cr {
+    font-family: CirceRounded-Regular!important
+}
+
+.card.script5354 .condition {
+    position: absolute;
+    font-size: 40px
+}
+
+.card.script5354 .figure {
+    position: absolute;
+    width: 300px;
+    left: 90px;
+    top: 70px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.card.script5354 .stick,
+.card.script5354 .stick_fly {
+    width: 360px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute
+}
+
+.card.script5354 .stick {
+    background-image: url(img/37.png)
+}
+
+.card.script5354 .stick_1 {
+    top: 90px;
+    left: 570px
+}
+
+.card.script5354 .stick_2 {
+    top: 330px;
+    left: 570px
+}
+
+.card.script5354 .stick_fly_block {
+    background-image: url(img/39.png)
+}
+
+.card.script5354 .stick_fly_list {
+    background-image: url(img/41.png);
+    padding: 0!important
+}
+
+.card.script5354 .stick_fly {
+    padding-left: 0;
+    padding-right: 20px
+}
+
+.card.script5354 .stick_fly_1 {
+    top: 90px;
+    left: 570px
+}
+
+.card.script5354 .stick_fly_2 {
+    top: 330px;
+    left: 570px
+}
+
+.card.script5354 .condition_litle {
+    position: absolute;
+    font-size: 40px
+}
+
+.card.script5354 .userButton_1,
+.card.script5354 .userButton_2 {
+    position: absolute;
+    top: 110px
+}
+
+.card.script5354 .hexagon_1 {
+    background-image: url(img/43.png)
+}
+
+.card.script5354 .hexagon_2 {
+    background-image: url(img/45.png)
+}
+
+.card.script5354 .hexagon_3 {
+    background-image: url(img/47.png)
+}
+
+.card.script5354 .hexagon_4 {
+    background-image: url(img/49.png)
+}
+
+.card.script5354 .hexagon_5 {
+    background-image: url(img/51.png)
+}
+
+.card.script5354 .triangle_1 {
+    background-image: url(img/53.png)
+}
+
+.card.script5354 .triangle_2 {
+    background-image: url(img/55.png)
+}
+
+.card.script5354 .triangle_3 {
+    background-image: url(img/57.png)
+}
+
+.card.script5354 .triangle_4 {
+    background-image: url(img/59.png)
+}
+
+.card.script5354 .triangle_5 {
+    background-image: url(img/61.png)
+}
+
+.card.script5354 .triangle_6 {
+    background-image: url(img/63.png)
+}
+
+.card.script5354 .triangle_7 {
+    background-image: url(img/65.png)
+}
+
+.card.script5354 .triangle_8 {
+    background-image: url(img/67.png)
+}
+
+.card.script5354 .triangle_9 {
+    background-image: url(img/69.png)
+}
+
+.card.script5354 .triangle_10 {
+    background-image: url(img/71.png)
+}
+
+.card.script5354 .triangle_11 {
+    background-image: url(img/73.png)
+}
+
+.card.script5354 .tetragon_1 {
+    background-image: url(img/75.png)
+}
+
+.card.script5354 .tetragon_2 {
+    background-image: url(img/77.png)
+}
+
+.card.script5354 .tetragon_3 {
+    background-image: url(img/79.png)
+}
+
+.card.script5354 .tetragon_4 {
+    background-image: url(img/81.png)
+}
+
+.card.script5354 .tetragon_5 {
+    background-image: url(img/83.png)
+}
+
+.card.script5354 .tetragon_6 {
+    background-image: url(img/85.png)
+}
+
+.card.script5354 .square_1 {
+    background-image: url(img/87.png)
+}
+
+.card.script5354 .square_2 {
+    background-image: url(img/89.png)
+}
+
+.card.script5354 .square_3 {
+    background-image: url(img/91.png)
+}
+
+.card.script5354 .square_4 {
+    background-image: url(img/93.png)
+}
+
+.card.script5354 .square_5 {
+    background-image: url(img/95.png)
+}
+
+.card.script5354 .circle_1 {
+    background-image: url(img/97.png)
+}
+
+.card.script5354 .circle_2 {
+    background-image: url(img/99.png)
+}
+
+.card.script5354 .circle_3 {
+    background-image: url(img/101.png)
+}
+
+.card.script5354#processes .frame {
+    padding: 5px 3px;
+    border-bottom: 1px solid #aaa;
+    background-color: #eee
+}
+
+.card.script5354#processes .frame.active {
+    background-color: #fff
+}
+
+.card.script5354#processes .frame .log_time {
+    color: green
+}
+
+.card.script5354#processes .frame .current_step b {
+    color: #00f
+}
+
+.card.script5354#processes .frame .state {
+    margin: 3px 0
+}
