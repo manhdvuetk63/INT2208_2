@@ -9,17 +9,17 @@ $(document).ready(function() {
         [60, 220],
         [170, 200]
     ];
-    let countA = 0;
+    var countA = 0;
     var mangB = [
         [770, 350],
         [690, 300],
         [800, 220],
         [700, 190],
     ];
-    let countB = 0;
-    let countC = 0;
-    let countD = 0;
-    let countE = 0;
+    var countB = 0;
+    var countC = 0;
+    var countD = 0;
+    var countE = 0;
     var mangC = [
         [200, 350],
         [80, 350],
@@ -85,7 +85,7 @@ $(document).ready(function() {
                 }, 600);
                 if (!$(ui.draggable).hasClass('square')) {
                     setTimeout(function() {
-                        $('.sence-1.monster_holder.left .red').css('opacity', '1');
+                        $('.sence-1 .monster_holder.left .red').css('opacity', '1');
                         $('.sence-1 .monster_holder.left .nose').css('opacity', '0');
                     }, 200);
                     setTimeout(function() {
@@ -378,7 +378,7 @@ $(document).ready(function() {
                     $('.sence-1').css('display', 'none');
                     $('.sence-3').css('display', 'none');
                     $('.sence-2').css('display', 'none');
-                    $('#bead2').animate({ left: '440px' }, 1000);
+                    $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
             };
         }
