@@ -94,6 +94,10 @@ $(document).ready(function() {
                     }, 2000);
                     $(ui.draggable).draggable("option", "revert", true);
                     $('.sence-1 .life.life_3:last-child').remove();
+                    healthA--;
+                    if (healthA == 0) {
+                        $('.sence-1 .figure').css('display', 'none');
+                    }
                 }
             }
 
@@ -155,7 +159,7 @@ $(document).ready(function() {
                         $('.sence-1 .monster_holder.right .nose').css('opacity', '1');
                     }, 2000);
                     $(ui.draggable).draggable("option", "revert", true);
-                    $('.scene-1 .life.life_3:last-child').remove();
+                    $('.sence-1 .life.life_3:last-child').remove();
                     healthA--;
                     if (healthA == 0) {
                         $('.sence-1 .figure').css('display', 'none');
@@ -246,6 +250,10 @@ $(document).ready(function() {
                     }, 2000);
                     $(ui.draggable).draggable("option", "revert", true);
                     $('.sence-2 .life.life_3:last-child').remove();
+                    healthB--;
+                    if (healthB == 0) {
+                        $('.sence-2 .figure').css('display', 'none');
+                    }
                 }
             }
             if (countC == 5) {
@@ -435,7 +443,7 @@ $(document).ready(function() {
                     $('.sence-1').css('display', 'none');
                     $('.sence-2').css('display', 'none');
                     $('.sence-3').css('display', 'none');
-                    $('#bead0').animate({ left: '440px' }, 1000);
+                    $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
             }
         }
