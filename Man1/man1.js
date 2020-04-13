@@ -85,7 +85,7 @@ $(document).ready(function() {
                 }, 600);
                 if (!$(ui.draggable).hasClass('square')) {
                     setTimeout(function() {
-                        $('.sence-1.monster_holder.left .red').css('opacity', '1');
+                        $('.sence-1 .monster_holder.left .red').css('opacity', '1');
                         $('.sence-1 .monster_holder.left .nose').css('opacity', '0');
                     }, 200);
                     setTimeout(function() {
@@ -115,6 +115,7 @@ $(document).ready(function() {
         }
     });
     $('.sence-1 .monster_holder.right').droppable({
+
         //accept: " .circle,.khac",
         class: {
             "ui-droppable-active": "ac",
@@ -281,8 +282,7 @@ $(document).ready(function() {
     }
 
 
-
-    //MAN3
+    // sence 3 
     $('.sence-3 .openhand.circle,.sence-3 .openhand.square').draggable({
         scroll: true,
         containment: ".boxgame",
