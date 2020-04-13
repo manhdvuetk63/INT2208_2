@@ -42,6 +42,7 @@ img {
 }
 
 .lessons {
+<<<<<<< HEAD
     display: flex;
     justify-content: space-around;
     padding: 80px;
@@ -50,6 +51,17 @@ img {
     margin-right: 250px;
     border: #5bbbe4 10px solid;
     border-radius: 10px;
+=======
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 250px;
+  border-radius: 10px;
+  position: absolute;
+>>>>>>> e95fdf1c4d178ff81d5bb2216c9222d629923b68
 }
 
 .lesson1-preview {
@@ -94,6 +106,7 @@ img {
 .lesson1-btn,
 .lesson2-btn,
 .lesson3-btn {
+<<<<<<< HEAD
     background-image: url(./img/play-btn.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -102,3 +115,15 @@ img {
     border-radius: 50%;
     margin-top: -10px;
 }
+=======
+  background-image: url(./img/play-btn.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-top: -9px;
+  margin-left: 131px;
+}
+>>>>>>> e95fdf1c4d178ff81d5bb2216c9222d629923b68

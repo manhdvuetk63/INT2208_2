@@ -99,7 +99,7 @@ $(document).ready(function() {
                     $('.sence-1 .square').css('opacity', '0');
                     $('.sence-1 .table_place.left,.sence-1 .label_table.left').css('opacity', '0');
                 }
-            }, 8000);
+            }, 5000);
         }
     });
     $('.monster_holder.right').droppable({
@@ -175,7 +175,7 @@ $(document).ready(function() {
                 $('.sence-1').css('display', 'none');
                 $('.sence-2').css('display', 'block');
                 $('#bead2').animate({ left: '440px' }, 1000);
-            }, 5000);
+            }, 2000);
         }
     })
 });

@@ -3,7 +3,7 @@ div.bg {
     width: 100%;
     min-height: 100px;
     background: rgb(251, 222, 22);
-    background: linear-gradient(0deg, rgba(251, 222, 22, 1) 0%, rgba(232, 243, 245, 1) 32%, rgba(167, 214, 220, 1) 100%);
+    background: linear-gradient(0deg, rgba(251, 222, 22, 1) 0%, rgba(232, 243, 245, 1) 80%, rgba(167, 214, 220, 1) 100%);
 }
 
 body .boxgame {
@@ -115,7 +115,9 @@ body .beads-wrapper {
     height: 480px;
     margin: 0 auto;
     top: 20px;
-    left: 0
+    left: 0;
+    cursor: -webkit-grab; 
+    cursor: grab;
 }
 
 .card.script5849 .lives_place {
@@ -882,7 +884,7 @@ body .beads-wrapper {
     position: absolute;
     overflow: visible;
     width: 80px;
-    height: 80px
+    height: 80px;
 }
 
 .card.script5849 .figure.figure_hide .inner {
@@ -2132,4 +2134,10 @@ body .beads-wrapper {
 
 .card.script5849#processes .frame .state {
     margin: 3px 0
+}
+.card.script5849 .square_5 {
+    background-image: url(./img3/143.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
 }
