@@ -3,7 +3,7 @@ div.bg {
     width: 100%;
     min-height: 100px;
     background: rgb(251, 222, 22);
-    background: linear-gradient(0deg, rgba(251, 222, 22, 1) 0%, rgba(232, 243, 245, 1) 32%, rgba(167, 214, 220, 1) 100%);
+    background: linear-gradient(0deg, rgba(251, 222, 22, 1) 0%, rgba(232, 243, 245, 1) 80%, rgba(167, 214, 220, 1) 100%);
 }
 
 body .boxgame {
@@ -218,6 +218,8 @@ body .beads-wrapper {
     margin: 0 auto;
     top: 20px;
     left: 0;
+    cursor: -webkit-grab; 
+    cursor: grab;
 }
 
 .card.script5848 .figure {
@@ -906,6 +908,20 @@ only screen and (min-device-pixel-ratio:2) {
 
 .card.script5848 .triangle_16 {
     background-image: url(./img/197.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.card.script5848 .pentagan_4 {
+    background-image: url(./img/123.png);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.card.script5848 .circle_1 {
+    background-image: url(./img/97.png);
     width: 80px;
     height: 80px;
     position: absolute;

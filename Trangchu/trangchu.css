@@ -41,12 +41,13 @@ img {
 .lessons {
   display: flex;
   justify-content: space-around;
-  padding: 80px;
+  width: 1200px;
+  padding: 50px;
   margin-top: 50px;
   margin-left: 200px;
   margin-right: 250px;
-  border: #5bbbe4 10px solid;
   border-radius: 10px;
+  position: absolute;
 }
 
 .lesson1-preview {
@@ -94,8 +95,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-  margin-top: -10px;
+  margin-top: -9px;
+  margin-left: 131px;
 }

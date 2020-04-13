@@ -6,23 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="module3.css">
-    <link href="New folder/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="New folder/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/bootstrap.css">
 
 </head>
 
 <body>
     <div class="bg">
-
         <div class="boxgame">
             <div class="head-box">
-                <a class="back-link" style="" href="#">
+                <a class="back-link" href="../Trangchu/trangchu.html">
                     <i class="fas fa-chevron-left fa-2x arrow-left"></i>
                     <span>Back</span>
                 </a>
@@ -33,8 +25,9 @@
                 </div>
             </div>
             <div class="card_content">
-                <div id="board" class="uchiru-place card player-1 script5849 fixed cr" style="">
-                    <div class="scene">
+                <div id="board" class="uchiru-place card player-1 script5849 fixed cr">
+                    <!-- sence 1 -->
+                    <div class="scene sence-1">
                         <div class="monster_place">
                             <div class="table_place right">
                                 <div class="table_monster" style="width: 123px;"></div>
@@ -129,7 +122,106 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
+
+                    <!-- sence 2 -->
+                    <!-- <div class="scene sence-2">
+                        <div class="monster_place">
+                            <div class="table_place right">
+                                <div class="table_monster" style="width: 123px;"></div>
+                            </div>
+                            <div class="table_place left">
+                                <div class="table_monster" style="width: 135px;"></div>
+                            </div>
+                            <div class="monster_holder right active">
+                                <div class="monster orange active">
+                                    <div class="mouth"></div>
+                                    <div class="nose"></div>
+                                </div>
+                                <div class="monster orange red" style="opacity: 0;"></div>
+                                <div class="monster orange sleep" style="opacity: 0;"></div>
+                                <div class="grid_monster"></div>
+                            </div>
+                            <div class="monster_holder left active">
+                                <div class="monster violet active">
+                                    <div class="mouth"></div>
+                                    <div class="nose"></div>
+                                </div>
+                                <div class="monster violet red" style="opacity: 0;"></div>
+                                <div class="monster violet sleep" style="opacity: 0;"></div>
+                                <div class="grid_monster"></div>
+                            </div>
+                            <div class="grid_place">
+                                <div class="figure openhand" style="left: 390px; top: -10px;" id="sprite_1">
+                                    <div class="inner cycle_1" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 480px; top: 0px;" id="sprite_2">
+                                    <div class="inner square_5" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 340px; top: 110px;" id="sprite_3">
+                                    <div class="inner square_1" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 450px; top: 100px;" id="sprite_4">
+                                    <div class="inner hexagon_1" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 550px; top: 100px;" id="sprite_5">
+                                    <div class="inner cycle_5" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 350px; top: 200px;" id="sprite_6">
+                                    <div class="inner cycle_2" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 440px; top: 190px;" id="sprite_7">
+                                    <div class="inner cycle_4" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 530px; top: 200px;" id="sprite_8">
+                                    <div class="inner square_2" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 330px; top: 300px;" id="sprite_9">
+                                    <div class="inner square_4" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 440px; top: 310px;" id="sprite_10">
+                                    <div class="inner hexagon_4" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 540px; top: 310px;" id="sprite_11">
+                                    <div class="inner triangle_3" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 330px; top: 400px;" id="sprite_12">
+                                    <div class="inner triangle_24" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 450px; top: 400px;" id="sprite_13">
+                                    <div class="inner cycle_3" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                                <div class="figure openhand" style="left: 550px; top: 400px;" id="sprite_14">
+                                    <div class="inner square_3" style="transform: rotate(0deg) scale(1, 1);"></div>
+                                </div>
+                            </div>
+                            <div class="label_table left" style="left: 164.5px; top: 43.5px;"><span class="i_eat">I eat <span class="figure_name ab">squares</span></span>
+                            </div>
+                            <div class="label_table right" style="left: 665.5px; top: 43.5px;"><span class="i_eat">I eat <span class="figure_name ab">circles</span></span>
+                            </div>
+                        </div>
+                        <div class="title rush" style="display: block;">
+                            <div class="text">Feed the elephants </div>
+                        </div>
+                        <div class="lives_place">
+                            <div class="life life_3" style="left: 0px;"></div>
+                            <div class="life life_3" style="left: 60px;"></div>
+                            <div class="life life_3" style="left: 120px;"></div>
+                        </div>
+                        <div class="lose_label" style="display: none;">
+                            <div class="text">
+                                <div class="text_1">Too many mistakes!</div>
+                                <div class="text_2">Try again!</div>
+                            </div>
+                            <div class="btn_place">
+                                <div class="button-next button-next_font_pts button-next_color_blue">
+                                    <div class="button-next__placeholder" style="visibility: hidden;">Next</div>
+                                    <div class="button-next__text">Next</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
 
