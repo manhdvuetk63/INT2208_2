@@ -9,17 +9,17 @@ $(document).ready(function() {
         [60, 220],
         [170, 200]
     ];
-    let countA = 0;
+    var countA = 0;
     var mangB = [
         [770, 350],
         [690, 300],
         [800, 220],
         [700, 190],
     ];
-    let countB = 0;
-    let countC = 0;
-    let countD = 0;
-    let countE = 0;
+    var countB = 0;
+    var countC = 0;
+    var countD = 0;
+    var countE = 0;
     var mangC = [
         [200, 350],
         [80, 350],
@@ -94,6 +94,10 @@ $(document).ready(function() {
                     }, 2000);
                     $(ui.draggable).draggable("option", "revert", true);
                     $('.sence-1 .life.life_3:last-child').remove();
+                    healthA--;
+                    if (healthA == 0) {
+                        $('.sence-1 .figure').css('display', 'none');
+                    }
                 }
             }
 
@@ -156,7 +160,7 @@ $(document).ready(function() {
                         $('.sence-1 .monster_holder.right .nose').css('opacity', '1');
                     }, 2000);
                     $(ui.draggable).draggable("option", "revert", true);
-                    $('.scene-1 .life.life_3:last-child').remove();
+                    $('.sence-1 .life.life_3:last-child').remove();
                     healthA--;
                     if (healthA == 0) {
                         $('.sence-1 .figure').css('display', 'none');
@@ -247,6 +251,10 @@ $(document).ready(function() {
                     }, 2000);
                     $(ui.draggable).draggable("option", "revert", true);
                     $('.sence-2 .life.life_3:last-child').remove();
+                    healthB--;
+                    if (healthB == 0) {
+                        $('.sence-2 .figure').css('display', 'none');
+                    }
                 }
             }
             if (countC == 5) {
@@ -370,7 +378,7 @@ $(document).ready(function() {
                     $('.sence-1').css('display', 'none');
                     $('.sence-3').css('display', 'none');
                     $('.sence-2').css('display', 'none');
-                    $('#bead2').animate({ left: '440px' }, 1000);
+                    $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
             };
         }
@@ -435,7 +443,7 @@ $(document).ready(function() {
                     $('.sence-1').css('display', 'none');
                     $('.sence-2').css('display', 'none');
                     $('.sence-3').css('display', 'none');
-                    $('#bead0').animate({ left: '440px' }, 1000);
+                    $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
             }
         }
