@@ -218,7 +218,7 @@ body .beads-wrapper {
     margin: 0 auto;
     top: 20px;
     left: 0;
-    cursor: -webkit-grab; 
+    cursor: -webkit-grab;
     cursor: grab;
 }
 
@@ -558,7 +558,7 @@ only screen and (min-device-pixel-ratio:2) {
 }
 
 .card.script5848 .monster.blue.eat .mouth {
-    background-image: url(/img/310.png)
+    background-image: url(img/310.png)
 }
 
 .card.script5848 .monster.green.active {
@@ -896,7 +896,6 @@ only screen and (min-device-pixel-ratio:2) {
     width: 80px;
     height: 80px;
     position: absolute;
-
 }
 
 .card.script5848 .hexagon_1 {
