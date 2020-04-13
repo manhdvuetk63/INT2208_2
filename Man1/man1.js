@@ -175,13 +175,13 @@ $(document).ready(function() {
             }, 2000);
         }, 1000)
     }
-    $('body').mousedown(function() {
+    $('body').mousemove(function() {
         if (countA == 4 && countB == 4) {
             setTimeout(function() {
                 $('.sence-1').css('display', 'none');
                 $('.sence-2').css('display', 'block');
                 $('#bead2').animate({ left: '440px' }, 1000);
-            }, 2000);
+            }, 5000);
         }
     })
 });
