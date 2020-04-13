@@ -13,7 +13,7 @@ $(document).ready(function() {
         [700, 190]
     ];
     let countB = 0;
-    $('.openhand.circle').draggable({
+    $('.sence-1 .openhand.circle').draggable({
         scroll: true,
         containment: ".boxgame",
         revert: "invalid",
@@ -22,9 +22,10 @@ $(document).ready(function() {
         drag: function(event, ui) {},
         stop: function(event, ui) {
             $('div.figure').removeClass("active-draggable");
+            $(ui.draggable).draggable("option", "revert", "invalid");
         }
     });
-    $('.openhand.square').draggable({
+    $('.sence-1 .openhand.square').draggable({
         scroll: true,
         containment: ".boxgame",
         revert: "invalid",
@@ -33,9 +34,10 @@ $(document).ready(function() {
         drag: function(event, ui) {},
         stop: function(event, ui) {
             $('div.figure').removeClass("active-draggable");
+            $(ui.draggable).draggable("option", "revert", "invalid");
         }
     });
-    $('.openhand.khac').draggable({
+    $('.sence-1 .openhand.khac').draggable({
         scroll: true,
         containment: ".boxgame",
         revert: true,
@@ -46,8 +48,8 @@ $(document).ready(function() {
             $('div.figure').removeClass("active-draggable");
         }
     });
-    $('.monster_holder.left').droppable({
-        accept: " .square,.khac",
+    $('.sence-1 .monster_holder.left').droppable({
+        // accept: " .square,.khac",
         class: {
             "ui-droppable-active": "ac",
             "ui-droppable-hover": "hv"
@@ -73,6 +75,7 @@ $(document).ready(function() {
                     opacity: '1'
                 }, 500);
                 if ($(ui.draggable).hasClass('square')) {
+                    $(ui.draggable).draggable("option", "revert", "invalid");
                     addcircle(ui.draggable, mangA, countA);
                     countA++;
                 }
@@ -88,6 +91,7 @@ $(document).ready(function() {
                         $('.monster_holder.left .red').css('opacity', '0');
                         $('.monster_holder.left .nose').css('opacity', '1');
                     }, 2000);
+                    $(ui.draggable).draggable("option", "revert", true);
                     $('.life.life_3:last-child').remove();
                 }
             }
@@ -103,7 +107,7 @@ $(document).ready(function() {
         }
     });
     $('.monster_holder.right').droppable({
-        accept: " .circle,.khac",
+        //accept: " .circle,.khac",
         class: {
             "ui-droppable-active": "ac",
             "ui-droppable-hover": "hv"
@@ -126,6 +130,7 @@ $(document).ready(function() {
                     opacity: '1'
                 }, 500);
                 if ($(ui.draggable).hasClass('circle')) {
+                    $(ui.draggable).draggable("option", "revert", "invalid");
                     addcircle(ui.draggable, mangB, countB);
                     countB++;
                 }
@@ -141,6 +146,7 @@ $(document).ready(function() {
                         $('.monster_holder.right .red').css('opacity', '0');
                         $('.monster_holder.right .nose').css('opacity', '1');
                     }, 2000);
+                    $(ui.draggable).draggable("option", "revert", true);
                     $('.life.life_3:last-child').remove();
 
                 }
