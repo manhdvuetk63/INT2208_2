@@ -925,3 +925,9 @@ only screen and (min-device-pixel-ratio:2) {
     height: 80px;
     position: absolute;
 }
+
+.lose_label {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}

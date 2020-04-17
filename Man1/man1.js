@@ -97,6 +97,7 @@ $(document).ready(function() {
                     healthA--;
                     if (healthA == 0) {
                         $('.sence-1 .figure').css('display', 'none');
+                        $('.sence-1 .lose_label').css('display', 'block');
                     }
                 }
             }
@@ -164,6 +165,7 @@ $(document).ready(function() {
                     healthA--;
                     if (healthA == 0) {
                         $('.sence-1 .figure').css('display', 'none');
+                        $('.sence-1 .lose_label').css('display', 'block');
                     }
                 }
             }
@@ -180,6 +182,7 @@ $(document).ready(function() {
                     $('.sence-1').css('display', 'none');
                     $('.sence-2').css('display', 'block');
                     $('#bead2').animate({ left: '440px' }, 1000);
+                    
                 }, 7000);
             }
         }
@@ -254,6 +257,7 @@ $(document).ready(function() {
                     healthB--;
                     if (healthB == 0) {
                         $('.sence-2 .figure').css('display', 'none');
+                        $('.sence-2 .lose_label').css('display', 'block');
                     }
                 }
             }
@@ -361,6 +365,7 @@ $(document).ready(function() {
                     healthC--;
                     if (healthC == 0) {
                         $('.sence-3 .figure').css('display', 'none');
+                        $('.sence-3 .lose_label').css('display', 'block');
                     }
                 }
             }
@@ -427,6 +432,7 @@ $(document).ready(function() {
                     healthC--;
                     if (healthC == 0) {
                         $('.sence-3 .figure').css('display', 'none');
+                        $('.sence-3 .lose_label').css('display', 'block');
                     }
                 }
             }
