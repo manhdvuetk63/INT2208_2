@@ -84,12 +84,7 @@ body .beads-wrapper {
     min-height: 560px
 }
 
-.monster_place {
-    position: absolute;
-    top: 55px;
-    width: 960px;
-    height: 515px;
-}
+
 
 .table_place.right {
     left: 587px;
@@ -299,8 +294,7 @@ body .beads-wrapper {
 .card.script5848 .monster_place {
     position: absolute;
     top: 55px;
-    width: 960px;
-    height: 515px
+
 }
 
 .card.script5848 .scene {
