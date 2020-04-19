@@ -924,4 +924,6 @@ only screen and (min-device-pixel-ratio:2) {
     display: flex;
     justify-content: center;
     margin-top: 200px;
+    font-family: 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: 35px;
 }
