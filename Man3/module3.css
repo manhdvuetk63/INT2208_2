@@ -61,7 +61,7 @@ body .beads-wrapper {
     width: 21px;
     height: 21px;
     border-radius: 10px;
-    background-image: url(img/ball.png);
+    background-image: url(img3/ball.png);
     position: absolute;
     top: 3px;
     transition: left 200ms linear;
