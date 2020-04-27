@@ -120,7 +120,6 @@ $(document).ready(function() {
         }
     });
     $('.sence-1 .monster_holder.right').droppable({
-
         //accept: " .circle,.khac",
         class: {
             "ui-droppable-active": "ac",
@@ -187,6 +186,8 @@ $(document).ready(function() {
             }
         }
     });
+
+    //sence 2
     $('.sence-2 .openhand.circle,.sence-2 .openhand.square').draggable({
         scroll: true,
         containment: ".boxgame",
@@ -385,6 +386,10 @@ $(document).ready(function() {
                     $('.sence-2').css('display', 'none');
                     $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
+                setTimeout(function () {
+                    window.location=  window.location = "../Thangthua/Thang/win.html";
+                    console.log("ok");
+                },8000);
             };
         }
     });
@@ -451,6 +456,11 @@ $(document).ready(function() {
                     $('.sence-3').css('display', 'none');
                     $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
+                setTimeout(function () {
+                    window.location=  window.location = "../Thangthua/Thang/win.html";
+                },8000);
+
+
             }
         }
     });
