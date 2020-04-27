@@ -136,29 +136,6 @@ body .beads-wrapper {
     height: 150px
 }
 
-.card.script5849 .lose_label .text {
-    position: relative;
-    display: inline;
-    font-size: 42px;
-    line-height: 45px
-}
-
-.card.script5849 .lose_label .text_1,
-.card.script5849 .lose_label .text_2 {
-    position: relative;
-    display: inline-block;
-    font-size: 38px;
-    line-height: 38px;
-    background-color: #fff
-}
-
-.card.script5849 .lose_label .btn_place {
-    position: relative;
-    width: 300px;
-    margin: 6px auto 0;
-    background-color: #fff
-}
-
 .card.script5849 .scene {
     position: relative;
     display: block;
@@ -1982,6 +1959,9 @@ body .beads-wrapper {
 .card.script5849 .monster.blue.red {
     background-image: url(img3/302.png)
 }
+.card.script5849 .monster.orange.red {
+    background-image: url(img3/302.png)
+}
 
 .card.script5849 .monster.blue.red .mouth {
     background-image: url(img3/295.png)
@@ -2140,4 +2120,12 @@ body .beads-wrapper {
     width: 80px;
     height: 80px;
     position: absolute;
+}
+
+.lose_label {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: 35px;
 }
