@@ -385,6 +385,10 @@ $(document).ready(function() {
                     $('.sence-2').css('display', 'none');
                     $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
+                setTimeout(function () {
+                    window.location=  window.location = "../Thangthua/Thang/win.html";
+                    console.log("ok");
+                },8000);
             };
         }
     });
@@ -451,6 +455,10 @@ $(document).ready(function() {
                     $('.sence-3').css('display', 'none');
                     $('#bead0').animate({ left: '392px' }, 1000);
                 }, 7000);
+                setTimeout(function () {
+                    window.location=  window.location = "../Thangthua/Thang/win.html";
+                    console.log("ok");
+                },8000);
             }
         }
     });
