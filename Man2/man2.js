@@ -5,10 +5,9 @@ $(document).ready(function () {
     var ball = $('.inner_progress i');
     var vitri = 0;
     var status_game = 0;
+
     scene.fadeIn(1000);
-
     $(shape[status]).fadeIn(1000);
-
     function chuyenman() {
         vitri = 440 - (status) * 24;
         $(ball[5 - status]).animate({left: vitri}, 1000);
@@ -29,7 +28,6 @@ $(document).ready(function () {
             console.log('statusgame' + status_game);
         }
     };
-
     function animationForTrueSquare() {
         $('.button-ok').css('opacity', '0');
         $('.stick_fly_1').css('backgroundImage', 'url(img/39.png)',);
@@ -61,7 +59,6 @@ $(document).ready(function () {
             backgroundImage: ""
         });
     }
-
     function err() {
         vitri = (5 - status) * 24 + 4;
         $(ball[5 - status]).animate({left: vitri}, 1000);
@@ -99,4 +96,5 @@ $(document).ready(function () {
             err();
         }
     });
+
 });
