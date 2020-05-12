@@ -1,0 +1,23 @@
+{
+  "name": "square-and-circle",
+  "version": "1.0.0",
+  "description": "Clone lại một phần chơi trên trang Dragonlearn.in cụ thể là màn Geometry/Shape/Square and Circle\r Tài liệu phần mềm: + SRS, SDD : http://bit.ly/2408MXH25",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manhdvuetk63/Square-and-Circle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manhdvuetk63/Square-and-Circle/issues"
+  },
+  "homepage": "https://github.com/manhdvuetk63/Square-and-Circle#readme",
+  "devDependencies": {
+    "cypress": "^4.5.0"
+  },
+  "dependencies": {}
+}

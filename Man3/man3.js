@@ -264,19 +264,21 @@ $(document).ready(function () {
             ;
         }
     });
-
-    function shapeAnimation($item, mang, count) {
-        console.log(mang[count]);
-        setTimeout(function () {
-            $item.animate({opacity: '0'})
-        }, 500);
-        setTimeout(function () {
-            $item.animate({
-                opacity: 1,
-                left: mang[count][0],
-                top: mang[count][1]
+    function shapeAnimation($item, arr, count) {
+        if ($item.hasClass('figure')) {
+            setTimeout(function () {
+                $item.animate({opacity: '0'})
+            }, 500);
+            setTimeout(function () {
+                $item.animate({
+                    opacity: 1,
+                    left: arr[count][0],
+                    top: arr[count][1]
+                }, 1000);
             }, 1000);
-        }, 1000)
+            return true;
+        }
+        else return false;
     }
     // Xử lý con voi bên phải
     $('.sence-2 .monster_holder.right').droppable({

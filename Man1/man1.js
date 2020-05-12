@@ -91,7 +91,6 @@ $(document).ready(function () {
                     }
                 }
             }
-
             if (countA == 4) {
                 setTimeout(function () {
                     $('.sence-1 .monster_holder.left .active,.sence-1 .monster_holder.left .red,.sence-1 .monster_holder.left .mouth,.sence-1 .monster_holder.left .nose').css("opacity", "0");
@@ -423,8 +422,10 @@ $(document).ready(function () {
             }
         }
     });
-    function shapeAnimation($item, arr, count) {
-        console.log(arr[count]);
+
+});
+function shapeAnimation($item, arr, count) {
+    if ($item.hasClass('figure')) {
         setTimeout(function () {
             $item.animate({opacity: '0'})
         }, 500);
@@ -435,5 +436,7 @@ $(document).ready(function () {
                 top: arr[count][1]
             }, 1000);
         }, 1000);
-    };
-});
+        return true;
+    }
+    else return false;
+}

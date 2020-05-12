@@ -8,6 +8,27 @@ $(document).ready(function () {
 
     scene.fadeIn(1000);
     $(shape[status]).fadeIn(1000);
+    $('.stick_fly_2 .button-ok').click(function () {
+        if ($(shape[status_game]).hasClass('circle')) {
+            animationForTrueShape(this);
+            setTimeout(function () {
+                chuyenman(status);
+            }, 2200);
+            console.log(status);
+        } else {
+            err(this);
+        }
+    })
+    $('.stick_fly_1 .button-ok').click(function () {
+        if ($(shape[status_game]).hasClass('square')) {
+            animationForTrueShape(this);
+            setTimeout(function () {
+                chuyenman(status);
+            }, 2200);
+        } else {
+            err(this);
+        }
+    });
     function chuyenman() {
         vitri = 440 - (status) * 24;
         $(ball[5 - status]).animate({left: vitri}, 1000);
@@ -25,31 +46,22 @@ $(document).ready(function () {
                 if (status_game >= 7) status_game = 0;
                 $(shape[++status_game]).fadeIn(1000);
             }, 1000);
-            console.log('statusgame' + status_game);
         }
     };
-    function animationForTrueSquare() {
-        $('.button-ok').css('opacity', '0');
-        $('.stick_fly_1').css('backgroundImage', 'url(img/39.png)',);
-        $('.stick_fly_1').animate({
-            left: '90px',
-            top: '370px'
-        }, 1500);
-        setTimeout(function () {
-            $('.stick_fly_1').css('backgroundImage', 'url(img/41.png)',)
-        }, 1500);
-    }
-
-    function animationForTrueCircle() {
-        $('.button-ok').css('opacity', '0');
-        $('.stick_fly_2').css('backgroundImage', 'url(img/39.png)',);
-        $('.stick_fly_2').animate({
-            left: '90px',
-            top: '370px'
-        }, 1500);
-        setTimeout(function () {
-            $('.stick_fly_2').css('backgroundImage', 'url(img/41.png)',)
-        }, 1500);
+    function animationForTrueShape(item) {
+        if ($(item).parent().hasClass('stick_fly')) {
+            $('.button-ok').css('opacity', '0');
+            $(item).parent().css('backgroundImage', 'url(img/39.png)',);
+            $(item).parent().animate({
+                left: '90px',
+                top: '370px'
+            }, 1500);
+            setTimeout(function () {
+                $(item).parent().css('backgroundImage', 'url(img/41.png)',)
+            }, 1500);
+            return true;
+        }
+        else return false;
     }
     function revert() {
         $('.button-ok').css('opacity', '1');
@@ -59,42 +71,17 @@ $(document).ready(function () {
             backgroundImage: ""
         });
     }
-    function err() {
-        vitri = (5 - status) * 24 + 4;
-        $(ball[5 - status]).animate({left: vitri}, 1000);
-        console.log(status);
+    function err(item) {
+        if ($(item).parent().hasClass('stick_fly')) {
+            status--;
+            vitri = (5 - status) * 24 + 4;
+            $(ball[5 - status]).animate({left: vitri}, 500);
+            $(item).children('.button-ok__wrong').css('opacity', '1');
+            setTimeout(function () {
+                $(item).children('.button-ok__wrong').css('opacity', '0');
+            }, 200);
+            return true;
+        }
+        else return false;
     };
-    $('.stick_fly_2 .button-ok').click(function () {
-        if ($(shape[status_game]).hasClass('circle')) {
-            animationForTrueCircle();
-            setTimeout(function () {
-                chuyenman(status);
-            }, 2200);
-            console.log(status);
-        } else {
-            status--;
-            $('.stick_fly_2 .button-ok__wrong').css('opacity', '1');
-            setTimeout(function () {
-                $('.stick_fly_2 .button-ok__wrong').css('opacity', '0');
-            }, 200);
-            err();
-        }
-    })
-    $('.stick_fly_1 .button-ok').click(function () {
-        if ($(shape[status_game]).hasClass('square')) {
-            animationForTrueSquare();
-            setTimeout(function () {
-                chuyenman(status);
-            }, 2200);
-            console.log(status);
-        } else {
-            status--;
-            $('.stick_fly_1 .button-ok__wrong').css('opacity', '1');
-            setTimeout(function () {
-                $('.stick_fly_1 .button-ok__wrong').css('opacity', '0');
-            }, 200);
-            err();
-        }
-    });
-
 });
