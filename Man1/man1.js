@@ -174,93 +174,7 @@ $(document).ready(function () {
     });
 
 //sence 2
-    $('.sence-2 .openhand.circle,.sence-2 .openhand.square').draggable({
-        scroll: true,
-        containment: ".boxgame",
-        revert: "invalid",
-        disable: true,
-        start: function (event, ui) {
-            $(ui.draggable).draggable("option", "revert", "invalid");
-        },
-        stop: function (event, ui) {
-            $('.sence-2 div.figure').removeClass("active-draggable");
-            $(ui.draggable).draggable("option", "revert", "invalid");
-        }
-    });
-    $('.sence-2 .openhand.khac').draggable({
-        scroll: true,
-        containment: ".boxgame",
-        revert: true,
-        disable: true,
-        start: function (event, ui) {
-            $(ui.draggable).draggable("option", "revert", "invalid");
-        },
-        stop: function (event, ui) {
-            $('div.figure').removeClass("active-draggable");
-        }
-    });
-    $('.sence-2 .monster_holder.left').droppable({
-        over: function (event, ui) {
-            if (countC < 5) {
-                $('.sence-2 .monster_holder.left .monster.active').addClass('eat');
-            }
-        },
-        out: function (event, ui) {
-            if (countC < 5) {
-                $('.sence-2 .monster_holder.left .monster.active').removeClass('eat');
-            }
-        },
-        drop: function (event, ui) {
-            if (countC < 5) {
-                $(ui.draggable).animate({
-                    left: '50',
-                    top: '100',
-                    opacity: '1'
-                }, 500);
-                if ($(ui.draggable).hasClass('square')) {
-                    $(ui.draggable).draggable("option", "revert", "invalid");
-                    shapeAnimation(ui.draggable, mangC, countC);
-                    countC++;
-                }
-                setTimeout(function () {
-                    $('.sence-2 .monster_holder.left .monster.active').removeClass('eat');
-                }, 600);
-                if (!$(ui.draggable).hasClass('square')) {
-                    setTimeout(function () {
-                        $('.sence-2 .monster_holder.left .red').css('opacity', '1');
-                        $('.sence-2 .monster_holder.left .nose').css('opacity', '0');
-                    }, 200);
-                    setTimeout(function () {
-                        $('.sence-2 .monster_holder.left .red').css('opacity', '0');
-                        $('.sence-2 .monster_holder.left .nose').css('opacity', '1');
-                    }, 2000);
-                    $(ui.draggable).draggable("option", "revert", true);
-                    $('.sence-2 .life.life_3:last-child').remove();
-                    healthB--;
-                    if (healthB == 0) {
-                        $('.sence-2 .figure').css('display', 'none');
-                        $('.sence-2 .lose_label').css('display', 'block');
-                    }
-                }
-            }
-            if (countC == 5) {
-                setTimeout(function () {
-                    $('.sence-2 .monster_holder.left .active,.sence-2 .monster_holder.left .red,.sence-2 .monster_holder.left .mouth,.sence-2 .monster_holder.left .nose').css("opacity", "0");
-                    $('.sence-2 .monster_holder.left .sleep').css('opacity', '1');
-                    $('.sence-2 .square').css('opacity', '0');
-                    $('.sence-2 .table_place.left,.sence-2 .label_table.left').css('opacity', '0');
-                    $('.sence-2 .khac,.sence-2 .circle').css('opacity', '0');
-                }, 4000);
-                setTimeout(function () {
-                    $('.sence-1').css('display', 'none');
-                    $('.sence-2').css('display', 'none');
-                    $('.sence-3').css('display', 'block');
-                    $('#bead1').animate({left: '416px'}, 1000);
-                }, 7000)
-            }
-            ;
-        }
-    })
+    
 // sence 3
     $('.sence-3 .openhand.circle,.sence-3 .openhand.square').draggable({
         scroll: true,
@@ -283,6 +197,90 @@ $(document).ready(function () {
         },
         stop: function (event, ui) {
             $('.sence-3 div.figure').removeClass("active-draggable");
+        }
+    });
+    
+    function shapeAnimation($item, arr, count) {
+        if ($item.hasClass('figure')) {
+            setTimeout(function () {
+                $item.animate({opacity: '0'})
+            }, 500);
+            setTimeout(function () {
+                $item.animate({
+                    opacity: 1,
+                    left: arr[count][0],
+                    top: arr[count][1]
+                }, 1000);
+            }, 1000);
+            return true;
+        }
+        else return false;
+    }
+    $('.sence-3 .monster_holder.right').droppable({
+        over: function (event, ui) {
+            if (countE < 3) {
+                $('.sence-3 .monster_holder.right .monster.active').addClass('eat');
+            }
+        },
+        out: function (event, ui) {
+            if (countE < 3) {
+                $('.sence-3 .monster_holder.right .monster.active').removeClass('eat');
+            }
+        },
+        drop: function (event, ui) {
+            if (countE < 3) {
+                $(ui.draggable).animate({
+                    left: '810',
+                    top: '100',
+                    opacity: '1'
+                }, 500);
+                if ($(ui.draggable).hasClass('square')) {
+                    $(ui.draggable).draggable("option", "revert", "invalid");
+                    shapeAnimation(ui.draggable, mangB, countE);
+                    countE++;
+                }
+                setTimeout(function () {
+                    $('.sence-3 .monster_holder.right .monster.active').removeClass('eat');
+                }, 600);
+                if (!$(ui.draggable).hasClass('square')) {
+                    setTimeout(function () {
+                        $('.sence-3 .monster_holder.right .red').css('opacity', '1');
+                        $('.monster_holder.right .nose').css('opacity', '0');
+                    }, 200);
+                    setTimeout(function () {
+                        $('.sence-3 .monster_holder.right .red').css('opacity', '0');
+                        $('.sence-3 .monster_holder.right .nose').css('opacity', '1');
+                    }, 2000);
+                    $(ui.draggable).draggable("option", "revert", true);
+                    $('.sence-3 .life.life_3:last-child').remove();
+                    healthC--;
+                    if (healthC == 0) {
+                        $('.sence-3 .figure').css('display', 'none');
+                        $('.sence-3 .lose_label').css('display', 'block');
+                    }
+                }
+            }
+            if (countE == 3) {
+                setTimeout(function () {
+                    $('.sence-3 .monster_holder.right .active,.sence-3 .monster_holder.right .red,.sence-3 .monster_holder.right .mouth,.sence-3 .monster_holder.right .nose').css("opacity", "0");
+                    $('.sence-3 .monster_holder.right .sleep').css('opacity', '1');
+                    $('.sence-3 .square').css('opacity', '0');
+                    $('.sence-3 .table_place.right,.sence-3 .label_table.right').css('opacity', '0');
+                }, 4000)
+            }
+            ;
+
+            if (countD == 4 && countE == 3) {
+                setTimeout(function () {
+                    $('.sence-1').css('display', 'none');
+                    $('.sence-2').css('display', 'none');
+                    $('.sence-3').css('display', 'none');
+                    $('#bead0').animate({left: '392px'}, 1000);
+                }, 7000);
+                setTimeout(function () {
+                    window.location = window.location = "../Thangthua/Thang/win.html";
+                }, 8000);
+            }
         }
     });
     $('.sence-3 .monster_holder.left').droppable({
@@ -355,88 +353,92 @@ $(document).ready(function () {
             ;
         }
     });
-    $('.sence-3 .monster_holder.right').droppable({
-        over: function (event, ui) {
-            if (countE < 3) {
-                $('.sence-3 .monster_holder.right .monster.active').addClass('eat');
-            }
-        },
-        out: function (event, ui) {
-            if (countE < 3) {
-                $('.sence-3 .monster_holder.right .monster.active').removeClass('eat');
-            }
-        },
-        drop: function (event, ui) {
-            if (countE < 3) {
-                $(ui.draggable).animate({
-                    left: '810',
-                    top: '100',
-                    opacity: '1'
-                }, 500);
-                if ($(ui.draggable).hasClass('square')) {
-                    $(ui.draggable).draggable("option", "revert", "invalid");
-                    shapeAnimation(ui.draggable, mangB, countE);
-                    countE++;
-                }
-                setTimeout(function () {
-                    $('.sence-3 .monster_holder.right .monster.active').removeClass('eat');
-                }, 600);
-                if (!$(ui.draggable).hasClass('square')) {
-                    setTimeout(function () {
-                        $('.sence-3 .monster_holder.right .red').css('opacity', '1');
-                        $('.monster_holder.right .nose').css('opacity', '0');
-                    }, 200);
-                    setTimeout(function () {
-                        $('.sence-3 .monster_holder.right .red').css('opacity', '0');
-                        $('.sence-3 .monster_holder.right .nose').css('opacity', '1');
-                    }, 2000);
-                    $(ui.draggable).draggable("option", "revert", true);
-                    $('.sence-3 .life.life_3:last-child').remove();
-                    healthC--;
-                    if (healthC == 0) {
-                        $('.sence-3 .figure').css('display', 'none');
-                        $('.sence-3 .lose_label').css('display', 'block');
-                    }
-                }
-            }
-            if (countE == 3) {
-                setTimeout(function () {
-                    $('.sence-3 .monster_holder.right .active,.sence-3 .monster_holder.right .red,.sence-3 .monster_holder.right .mouth,.sence-3 .monster_holder.right .nose').css("opacity", "0");
-                    $('.sence-3 .monster_holder.right .sleep').css('opacity', '1');
-                    $('.sence-3 .square').css('opacity', '0');
-                    $('.sence-3 .table_place.right,.sence-3 .label_table.right').css('opacity', '0');
-                }, 4000)
-            }
-            ;
+});
 
-            if (countD == 4 && countE == 3) {
+$('.sence-2 .openhand.circle,.sence-2 .openhand.square').draggable({
+    scroll: true,
+    containment: ".boxgame",
+    revert: "invalid",
+    disable: true,
+    start: function (event, ui) {
+        $(ui.draggable).draggable("option", "revert", "invalid");
+    },
+    stop: function (event, ui) {
+        $('.sence-2 div.figure').removeClass("active-draggable");
+        $(ui.draggable).draggable("option", "revert", "invalid");
+    }
+});
+$('.sence-2 .openhand.khac').draggable({
+    scroll: true,
+    containment: ".boxgame",
+    revert: true,
+    disable: true,
+    start: function (event, ui) {
+        $(ui.draggable).draggable("option", "revert", "invalid");
+    },
+    stop: function (event, ui) {
+        $('div.figure').removeClass("active-draggable");
+    }
+});
+$('.sence-2 .monster_holder.left').droppable({
+    over: function (event, ui) {
+        if (countC < 5) {
+            $('.sence-2 .monster_holder.left .monster.active').addClass('eat');
+        }
+    },
+    out: function (event, ui) {
+        if (countC < 5) {
+            $('.sence-2 .monster_holder.left .monster.active').removeClass('eat');
+        }
+    },
+    drop: function (event, ui) {
+        if (countC < 5) {
+            $(ui.draggable).animate({
+                left: '50',
+                top: '100',
+                opacity: '1'
+            }, 500);
+            if ($(ui.draggable).hasClass('square')) {
+                $(ui.draggable).draggable("option", "revert", "invalid");
+                shapeAnimation(ui.draggable, mangC, countC);
+                countC++;
+            }
+            setTimeout(function () {
+                $('.sence-2 .monster_holder.left .monster.active').removeClass('eat');
+            }, 600);
+            if (!$(ui.draggable).hasClass('square')) {
                 setTimeout(function () {
-                    $('.sence-1').css('display', 'none');
-                    $('.sence-2').css('display', 'none');
-                    $('.sence-3').css('display', 'none');
-                    $('#bead0').animate({left: '392px'}, 1000);
-                }, 7000);
+                    $('.sence-2 .monster_holder.left .red').css('opacity', '1');
+                    $('.sence-2 .monster_holder.left .nose').css('opacity', '0');
+                }, 200);
                 setTimeout(function () {
-                    window.location = window.location = "../Thangthua/Thang/win.html";
-                }, 8000);
+                    $('.sence-2 .monster_holder.left .red').css('opacity', '0');
+                    $('.sence-2 .monster_holder.left .nose').css('opacity', '1');
+                }, 2000);
+                $(ui.draggable).draggable("option", "revert", true);
+                $('.sence-2 .life.life_3:last-child').remove();
+                healthB--;
+                if (healthB == 0) {
+                    $('.sence-2 .figure').css('display', 'none');
+                    $('.sence-2 .lose_label').css('display', 'block');
+                }
             }
         }
-    });
-
-});
-function shapeAnimation($item, arr, count) {
-    if ($item.hasClass('figure')) {
-        setTimeout(function () {
-            $item.animate({opacity: '0'})
-        }, 500);
-        setTimeout(function () {
-            $item.animate({
-                opacity: 1,
-                left: arr[count][0],
-                top: arr[count][1]
-            }, 1000);
-        }, 1000);
-        return true;
+        if (countC == 5) {
+            setTimeout(function () {
+                $('.sence-2 .monster_holder.left .active,.sence-2 .monster_holder.left .red,.sence-2 .monster_holder.left .mouth,.sence-2 .monster_holder.left .nose').css("opacity", "0");
+                $('.sence-2 .monster_holder.left .sleep').css('opacity', '1');
+                $('.sence-2 .square').css('opacity', '0');
+                $('.sence-2 .table_place.left,.sence-2 .label_table.left').css('opacity', '0');
+                $('.sence-2 .khac,.sence-2 .circle').css('opacity', '0');
+            }, 4000);
+            setTimeout(function () {
+                $('.sence-1').css('display', 'none');
+                $('.sence-2').css('display', 'none');
+                $('.sence-3').css('display', 'block');
+                $('#bead1').animate({left: '416px'}, 1000);
+            }, 7000)
+        }
+        ;
     }
-    else return false;
-}
+})
