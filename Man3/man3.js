@@ -22,27 +22,7 @@ $(document).ready(function () {
         [700, 190]
     ];
 
-    //sence 1
-    // Xử lý kéo thả các khối vuông-tròn
-    $('.sence-1 .openhand.circle,.sence-1 .openhand.square').draggable({
-        scroll: true,
-        containment: ".boxgame",
-        revert: "invalid",
-        disable: true,
-        stop: function (event, ui) {
-            $('div.figure').removeClass("active-draggable");
-            $(ui.draggable).draggable("option", "revert", "invalid");
-        }
-    });
-    $('.sence-1 .openhand.khac').draggable({
-        scroll: true,
-        containment: ".boxgame",
-        revert: true,
-        disable: true,
-        stop: function (event, ui) {
-            $('.sence-1 div.figure').removeClass("active-draggable");
-        }
-    });
+    
 
     // Xử lý voi bên trái
     $('.sence-1 .monster_holder.left').droppable({
@@ -107,70 +87,29 @@ $(document).ready(function () {
             ;
         }
     });
-
-    // Xử lý con voi bên phải
-    $('.sence-1 .monster_holder.right').droppable({
-        over: function (event, ui) {
-            if (countB < 5) {
-                $('.sence-1 .monster_holder.right .monster.active').addClass('eat');
-            }
-        },
-        out: function (event, ui) {
-            if (countB < 5) {
-                $('.sence-1 .monster_holder.right .monster.active').removeClass('eat');
-            }
-        },
-        drop: function (event, ui) {
-            if (countB < 5) {
-                $(ui.draggable).animate({
-                    left: '810',
-                    top: '100',
-                    opacity: '1'
-                }, 500);
-                if ($(ui.draggable).hasClass('circle')) {
-                    $(ui.draggable).draggable("option", "revert", "invalid");
-                    shapeAnimation(ui.draggable, mangB, countB);
-                    countB++;
-                }
-                setTimeout(function () {
-                    $('.sence-1 .monster_holder.right .monster.active').removeClass('eat');
-                }, 600);
-                if (!$(ui.draggable).hasClass('circle')) {
-                    setTimeout(function () {
-                        $('.sence-1 .monster_holder.right .red').css('opacity', '1');
-                        $('.sence-1 .monster_holder.right .nose').css('opacity', '0');
-                    }, 200);
-                    setTimeout(function () {
-                        $('.sence-1 .monster_holder.right .red').css('opacity', '0');
-                        $('.sence-1 .monster_holder.right .nose').css('opacity', '1');
-                    }, 2000);
-                    $(ui.draggable).draggable("option", "revert", true);
-                    $('.sence-1 .life.life_3:last-child').remove();
-                    healthA--;
-                    if (healthA == 0) {
-                        $('.sence-1 .figure').css('display', 'none');
-                        $('.sence-1 .lose_label').css('display', 'block');
-                    }
-                }
-            }
-            if (countB == 5) {
-                setTimeout(function () {
-                    $('.sence-1 .monster_holder.right .active,.sence-1 .monster_holder.right .red,.sence-1 .monster_holder.right .mouth,.sence-1 .monster_holder.right .nose').css("opacity", "0");
-                    $('.sence-1 .monster_holder.right .sleep').css('opacity', '1');
-                    $('.sence-1 .circle').css('opacity', '0');
-                    $('.sence-1 .table_place.right,.sence-1 .label_table.right').css('opacity', '0');
-                }, 4000)
-            }
-            ;
-            if (countA == 5 && countB == 5) {
-                setTimeout(function () {
-                    $('.sence-1').css('display', 'none');
-                    $('.sence-2').css('display', 'block');
-                    $('#bead1').animate({left: '440px'}, 1000);
-                }, 7000);
-            }
+//sence 1
+    // Xử lý kéo thả các khối vuông-tròn
+    $('.sence-1 .openhand.circle,.sence-1 .openhand.square').draggable({
+        scroll: true,
+        containment: ".boxgame",
+        revert: "invalid",
+        disable: true,
+        stop: function (event, ui) {
+            $('div.figure').removeClass("active-draggable");
+            $(ui.draggable).draggable("option", "revert", "invalid");
         }
     });
+    $('.sence-1 .openhand.khac').draggable({
+        scroll: true,
+        containment: ".boxgame",
+        revert: true,
+        disable: true,
+        stop: function (event, ui) {
+            $('.sence-1 div.figure').removeClass("active-draggable");
+        }
+    });
+    // Xử lý con voi bên phải
+   
 
 
     // sence 2
@@ -262,6 +201,68 @@ $(document).ready(function () {
                 }, 9000);
             }
             ;
+        }
+    });
+    $('.sence-1 .monster_holder.right').droppable({
+        over: function (event, ui) {
+            if (countB < 5) {
+                $('.sence-1 .monster_holder.right .monster.active').addClass('eat');
+            }
+        },
+        out: function (event, ui) {
+            if (countB < 5) {
+                $('.sence-1 .monster_holder.right .monster.active').removeClass('eat');
+            }
+        },
+        drop: function (event, ui) {
+            if (countB < 5) {
+                $(ui.draggable).animate({
+                    left: '810',
+                    top: '100',
+                    opacity: '1'
+                }, 500);
+                if ($(ui.draggable).hasClass('circle')) {
+                    $(ui.draggable).draggable("option", "revert", "invalid");
+                    shapeAnimation(ui.draggable, mangB, countB);
+                    countB++;
+                }
+                setTimeout(function () {
+                    $('.sence-1 .monster_holder.right .monster.active').removeClass('eat');
+                }, 600);
+                if (!$(ui.draggable).hasClass('circle')) {
+                    setTimeout(function () {
+                        $('.sence-1 .monster_holder.right .red').css('opacity', '1');
+                        $('.sence-1 .monster_holder.right .nose').css('opacity', '0');
+                    }, 200);
+                    setTimeout(function () {
+                        $('.sence-1 .monster_holder.right .red').css('opacity', '0');
+                        $('.sence-1 .monster_holder.right .nose').css('opacity', '1');
+                    }, 2000);
+                    $(ui.draggable).draggable("option", "revert", true);
+                    $('.sence-1 .life.life_3:last-child').remove();
+                    healthA--;
+                    if (healthA == 0) {
+                        $('.sence-1 .figure').css('display', 'none');
+                        $('.sence-1 .lose_label').css('display', 'block');
+                    }
+                }
+            }
+            if (countB == 5) {
+                setTimeout(function () {
+                    $('.sence-1 .monster_holder.right .active,.sence-1 .monster_holder.right .red,.sence-1 .monster_holder.right .mouth,.sence-1 .monster_holder.right .nose').css("opacity", "0");
+                    $('.sence-1 .monster_holder.right .sleep').css('opacity', '1');
+                    $('.sence-1 .circle').css('opacity', '0');
+                    $('.sence-1 .table_place.right,.sence-1 .label_table.right').css('opacity', '0');
+                }, 4000)
+            }
+            ;
+            if (countA == 5 && countB == 5) {
+                setTimeout(function () {
+                    $('.sence-1').css('display', 'none');
+                    $('.sence-2').css('display', 'block');
+                    $('#bead1').animate({left: '440px'}, 1000);
+                }, 7000);
+            }
         }
     });
     function shapeAnimation($item, arr, count) {
