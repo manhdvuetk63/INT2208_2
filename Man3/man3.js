@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 $(document).ready(function () {
 
     var countA = 0; // đếm số lượng hình vuông
@@ -104,7 +106,7 @@ $(document).ready(function () {
                     $('#bead1').animate({left: '440px'}, 1000);
                 }, 7000);
             }
-            ;
+            
         }
     });
 
@@ -161,7 +163,7 @@ $(document).ready(function () {
                     $('.sence-1 .table_place.right,.sence-1 .label_table.right').css('opacity', '0');
                 }, 4000)
             }
-            ;
+            
             if (countA == 5 && countB == 5) {
                 setTimeout(function () {
                     $('.sence-1').css('display', 'none');
@@ -261,7 +263,7 @@ $(document).ready(function () {
 
                 }, 9000);
             }
-            ;
+            
         }
     });
     function shapeAnimation($item, arr, count) {
@@ -333,7 +335,7 @@ $(document).ready(function () {
                     $('.sence-2 .table_place.right,.sence-2 .label_table.right').css('opacity', '0');
                 }, 4000)
             }
-            ;
+            
             if (countC == 5 && countD == 5) {
                 setTimeout(function () {
                     $('.sence-1').css('display', 'none');

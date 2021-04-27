@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(document).ready(function () {
     var status = 0;
     var scene = $('.scene');
@@ -47,7 +48,7 @@ $(document).ready(function () {
                 $(shape[++status_game]).fadeIn(1000);
             }, 1000);
         }
-    };
+    }
     function animationForTrueShape(item) {
         if ($(item).parent().hasClass('stick_fly')) {
             $('.button-ok').css('opacity', '0');
@@ -83,5 +84,5 @@ $(document).ready(function () {
             return true;
         }
         else return false;
-    };
+    }
 });

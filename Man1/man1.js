@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 $(document).ready(function () {
     var healthA = 3;
     var healthB = 3;
@@ -99,7 +101,7 @@ $(document).ready(function () {
                     $('.sence-1 .table_place.left,.sence-1 .label_table.left').css('opacity', '0');
                 }, 4000)
             }
-            ;
+            
             if (countA == 4 && countB == 4) {
                 setTimeout(function () {
                     $('.sence-1').css('display', 'none');
@@ -107,7 +109,7 @@ $(document).ready(function () {
                     $('#bead2').animate({left: '440px'}, 1000);
                 }, 7000);
             }
-            ;
+            
         }
     });
     $('.sence-1 .monster_holder.right').droppable({
@@ -162,7 +164,7 @@ $(document).ready(function () {
                     $('.sence-1 .table_place.right,.sence-1 .label_table.right').css('opacity', '0');
                 }, 4000)
             }
-            ;
+            
             if (countA == 4 && countB == 4) {
                 setTimeout(function () {
                     $('.sence-1').css('display', 'none');
@@ -258,7 +260,7 @@ $(document).ready(function () {
                     $('#bead1').animate({left: '416px'}, 1000);
                 }, 7000)
             }
-            ;
+            
         }
     })
 // sence 3
@@ -339,7 +341,7 @@ $(document).ready(function () {
                     $('.sence-3 .table_place.left,.sence-3 .label_table.left').css('opacity', '0');
                 }, 4000)
             }
-            ;
+            
             if (countD == 4 && countE == 3) {
                 setTimeout(function () {
                     $('.sence-1').css('display', 'none');
@@ -352,7 +354,7 @@ $(document).ready(function () {
                     console.log("ok");
                 }, 8000);
             }
-            ;
+            
         }
     });
     $('.sence-3 .monster_holder.right').droppable({
@@ -407,7 +409,7 @@ $(document).ready(function () {
                     $('.sence-3 .table_place.right,.sence-3 .label_table.right').css('opacity', '0');
                 }, 4000)
             }
-            ;
+            
 
             if (countD == 4 && countE == 3) {
                 setTimeout(function () {
